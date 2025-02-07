@@ -4,17 +4,17 @@ import time
 from datetime import datetime
 from app.config import CSV_URL, CSV_PATH, UPDATE_INTERVAL
 
-def download_csv():
+def download_restaurant_info():
     response = requests.get(CSV_URL)
     if response.status_code == 200:
         with open(CSV_PATH, "wb") as file:
             file.write(response.content)
         print(f"CSV updated at {datetime.now()}")
 
-def load_data():
+def load_restaurant_data():
     return pd.read_csv(CSV_PATH)
 
-def update_data_periodically():
+def automate_data_update():
     while True:
-        download_csv()
+        download_restaurant_info()
         time.sleep(UPDATE_INTERVAL)

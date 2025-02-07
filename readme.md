@@ -17,5 +17,5 @@ A high-performance Restaurant API that allows users to find available restaurant
 
 ### Clone the Repository
 ```sh
-git clone https://github.com/your-username/restaurant-api.git
+git clone https://github.com/nidhiojha/restaurant-api.git
 cd restaurant-api

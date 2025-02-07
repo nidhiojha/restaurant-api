@@ -1,12 +1,12 @@
 from fastapi import FastAPI
 import threading
 from app.routes import router
-from app.utils import update_data_periodically
+from app.utils import automate_data_update
 
 app = FastAPI()
 app.include_router(router)
 
-threading.Thread(target=update_data_periodically, daemon=True).start()
+threading.Thread(target=automate_data_update, daemon=True).start()
 
 if __name__ == "__main__":
     import uvicorn
