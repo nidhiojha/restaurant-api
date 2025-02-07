@@ -10,6 +10,9 @@ A high-performance Restaurant API that allows users to find available restaurant
 - No authentication required.
 
 ## 🛠 Installation & Setup
+- conda create --name restaurant-api python=3.10
+- conda activate restaunrant-api
+- pip install -r .\requirements.txt
 
 ### Prerequisites
 - Python 3.9+
