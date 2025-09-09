@@ -180,3 +180,27 @@ graph LR
     class SAP sap
 ```
 
+
+### 1.1 Business Objectives
+- Automate SAP screenshot collection process
+- Integrate cloud storage for output file management
+- Enhance security through centralized file storage
+- Reduce manual intervention in the file handling process
+- Maintain compatibility with existing Windows-based systems
+
+---
+
+## 2. Business Context
+
+### 2.1 Current State
+- Existing Autonomous Config project operates in a network environment
+- Manual .exe file upload process through intermediate channel
+- Output files stored locally on client VM
+- Windows-based execution environment
+- VPN-protected client network
+
+### 2.2 Desired Future State
+- Automated output file upload to cloud storage
+- Centralized file management and access
+- Enhanced security through cloud storage integration
+- Streamlined file retrieval process
